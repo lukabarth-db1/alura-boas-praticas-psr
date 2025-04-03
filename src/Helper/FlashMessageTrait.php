@@ -10,4 +10,9 @@ trait FlashMessageTrait
     {
         $_SESSION['error_message'] = $errorMessage;
     }
+
+    private function editMessage(string $editMessage): void
+    {
+        $_SESSION['edit_message'] = $editMessage;
+    }
 }
